@@ -32,19 +32,7 @@ def parse_paper(path):
 
 openai.api_key = "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"
 
-threebodyproblem = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/The Three-Body Problem by Liu Cixin (z-lib ( PDFDrive ).pdf")
-hammingbook = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/Hamming-TheArtOfDoingScienceAndEngineering.pdf")
-fallapart = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/things fall apart ( PDFDrive ).pdf")
-zerotoone = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/021.pdf")
-windup = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/The Wind-Up Bird Chronicle ( PDFDrive ).pdf")
-norwood = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/Haruki Murakami - Norwegian Wood.pdf")
 
-def comparebooks(df1, df2, n=3, pprint=True):
-
-
-    totalsimilarity= [cosine_similarity(p0,p1) for p0,p1 in zip(df1["embeddings"], df2["embeddings"])]
-    similarity = sum(totalsimilarity)/len(totalsimilarity)
-    return similarity
 
 
 
