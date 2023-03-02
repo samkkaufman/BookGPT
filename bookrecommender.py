@@ -30,7 +30,7 @@ def parse_paper(path):
     result = [paper_text, paper_text_string]
     return result
 
-openai.api_key = "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"
+openai.api_key = ""
 
 
 
