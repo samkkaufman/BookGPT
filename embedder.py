@@ -32,15 +32,15 @@ def parse_paper(path):
 
 openai.api_key = "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"
 
-crimeandpun = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/Dostoevsky, Fyodor - Crime and Punishment.pdf")
-leanstartup = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/Eric Ries - The Lean Startup_ How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses  -Crown Business (2011).pdf")
-f451 = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/Fahrenheit_451.pdf")
-dune = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/Frank Herbert's - Dune - Part 1 [EnglishOnlineClub.com].pdf")
-hamlet = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/hamlet_PDF_FolgerShakespeare.pdf")
-orwell = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/Orwell-1949 1984.pdf")
-romeo = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/romeo-and-juliet_PDF_FolgerShakespeare.pdf")
-wandering = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/The Wandering Earth.pdf")
-merchant = parse_paper("/Users/samkaufman/PycharmProjects/ExamGPT/Books/the-merchant-of-venice_PDF_FolgerShakespeare.pdf")
+crimeandpun = parse_paper("path")
+leanstartup = parse_paper("path")
+f451 = parse_paper("path")
+dune = parse_paper("path")
+hamlet = parse_paper("path")
+orwell = parse_paper("path")
+romeo = parse_paper("path")
+wandering = parse_paper("path")
+merchant = parse_paper("path")
 
 crimeandpundf = pd.DataFrame(crimeandpun[0])
 crimeandpundf = crimeandpundf[crimeandpundf['text'] != '']
